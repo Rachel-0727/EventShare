@@ -37,7 +37,7 @@
             <%= select_tag :sort,
             options_for_select([
               ["Most recent posts first", "date_posted"],
-              ["Earliest events first", "event_date"]
+              ["Earliest events first", "event_datetime"]
             ], params[:sort]),
             include_blank: "Sort by...",
             class: "w-full [&>*:first-child]:!cursor-pointer",

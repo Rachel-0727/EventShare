@@ -28,7 +28,7 @@ class InterestedeventsController < ApplicationController
     @tab = params[:tab] || "interested"
 
     sort_options = {
-      "event_date" => { event_date: :asc },
+      "event_datetime" => { event_datetime: :asc },
       "date_posted" => { updated_at: :desc }
     }
     order = sort_options[params[:sort]] || { updated_at: :desc }
@@ -38,8 +38,8 @@ class InterestedeventsController < ApplicationController
     else
       @events = current_user.posts.order(order)
     end
-    @upcoming = @events.where("event_date >= ?", Date.current)
-    @past = @events.where("event_date < ?", Date.current)
+    @upcoming = @events.where("event_datetime >= ?", Date.current)
+    @past = @events.where("event_datetime < ?", Date.current)
   end
 
   private

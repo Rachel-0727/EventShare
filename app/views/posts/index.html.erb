@@ -3,7 +3,6 @@
 <div id="top" class="absolute top-0"></div>
 <div class="max-w-2xl mx-auto w-full transition-all duration-300">
   <%= render 'layouts/notice' %>
-
   <header class="py-4 flex flex-col text-center items-center">
     <h1 class="text-4xl !font-[Bricolage_Grotesque] text-[var(--typography-black)] font-extrabold dark:text-white tracking-tight">
       looking for an <br>
@@ -12,11 +11,9 @@
     <br>
     <h2 class="text-xl !font-[Bricolage_Grotesque] text-[var(--typography-grey)] mt-2  font-medium">discover what's happening in your community!</h2>
   </header>
-
   <%# sticky sort bar %>
   <div class="sticky top-0 z-10 bg-[var(--main-background)]/80 backdrop-blur-xl py-4 border-b border-gray-100 mb-8" data-controller="scroll-top">
     <%= form_with url: posts_path, method: :get, class: "flex justify-between items-center text-[var(--typography-grey)]", data: { turbo_frame: "posts" } do |f| %>
-
       <%# back to top %>
       <a href="#top" 
    class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[var(--typography-grey)] hover:text-[var(--brand-blue)]">
@@ -25,7 +22,6 @@
         </svg>
         Back to top
       </a>
-
       <%# sort container %>
       <div class="flex items-center gap-2 group">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -36,7 +32,7 @@
           <%= select_tag :sort,
             options_for_select([
               ["Most recent posts first", "date_posted"],
-              ["Earliest events first", "event_date"]
+              ["Earliest events first", "event_datetime"]
             ], params[:sort]),
             include_blank: "Sort by...",
             class: "w-full [&>*:first-child]:!cursor-pointer",
@@ -50,10 +46,8 @@
       </div>
     <% end %>
   </div>
-
   <%# posts %>
   <main id="posts" class="flex flex-col items-center text-[var(--action-orange)]">
-    
     <%# upcoming events %>
     <section id="upcoming_events" class="w-full flex flex-col gap-y-8">
       <%# Posts that HAVE NOT passed %>
@@ -61,7 +55,6 @@
         <%= render post  %>
       <% end %>
     </section>
-    
     <%# past events %>
     <section id= "past_events" class="w-full relative mt-16 border-t-2 border-dotted border-[var(--typography-grey)]">
       <div class="flex items-center justify-center py-6">

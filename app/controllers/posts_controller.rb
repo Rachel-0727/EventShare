@@ -6,14 +6,14 @@ class PostsController < ApplicationController
   def index
     sort_orders = {
       "date_posted" => { updated_at: :desc },
-      "event_date" => { event_date: :asc }
+      "event_datetime" => { event_datetime: :asc }
     }
     sort_order_name = params[:sort] || "date_posted"
     sort_order = sort_orders[sort_order_name]
 
     @posts = Post.includes(:interestedevents).order(sort_order)
-    @upcoming = @posts.where("event_date >= ?", Date.current)
-    @past = @posts.where("event_date < ?", Date.current)
+    @upcoming = @posts.where("event_datetime >= ?", Date.current)
+    @past = @posts.where("event_datetime < ?", Date.current)
   end
 
   # GET /posts/1 or /posts/1.json
@@ -74,6 +74,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.fetch(:post, {}).permit(:event_title, :location, :event_date, :event_time, :description, requirements_attributes: [ :id, :req_description, :_destroy ])
+      params.fetch(:post, {}).permit(:event_title, :location, :event_datetime, :description, :timezone, requirements_attributes: [ :id, :req_description, :_destroy ])
     end
 end
