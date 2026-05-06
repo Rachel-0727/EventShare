@@ -95,7 +95,7 @@
   </div>
   <%# submit button %>
   <div class="mt-6 flex justify-center w-full">
-    <%= form.submit "Create Event", class: "w-full rounded-lg bg-neutral-900 px-3.5 py-2 text-sm font-medium text-white transition-all hover:bg-neutral-700",
+    <%= form.submit "Publish Event", class: "w-full rounded-lg bg-neutral-900 px-3.5 py-2 text-sm font-medium text-white transition-all hover:bg-neutral-700",
     data: (post.persisted? ? { turbo_confirm: "Confirm changes? You can re-edit your event details later." } : {}) %>
   </div>
 <% end %>
