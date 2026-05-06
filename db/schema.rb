@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_05_06_173642) do
+ActiveRecord::Schema[8.1].define(version: 2026_05_06_233004) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -63,11 +63,11 @@ ActiveRecord::Schema[8.1].define(version: 2026_05_06_173642) do
   create_table "posts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "description"
-    t.date "event_date"
-    t.time "event_time"
+    t.datetime "event_datetime"
     t.string "event_title"
     t.string "location"
     t.bigint "organizer_id", null: false
+    t.text "timezone", default: "UTC"
     t.datetime "updated_at", null: false
     t.index ["organizer_id"], name: "index_posts_on_organizer_id"
   end

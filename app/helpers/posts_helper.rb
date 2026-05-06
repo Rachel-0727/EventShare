@@ -1,28 +1,13 @@
 module PostsHelper
-  def event_countdown_text(event_date)
-    days_until = (event_date.to_date - Date.current).to_i
-    if days_until <=0
-      "this event has passed!"
-    elsif days_until > 30
-      "in 30+ days"
-    else
-      "in #{pluralize(days_until, 'day')}"
-    end
+  def event_countdown_text(event_datetime)
+    distance_of_time_in_words_to_now(event_datetime)
   end
 
-  def format_date(event_date)
-    if event_date != nil
-      event_date.strftime("%B %d, %Y")
+  def format_date(event_datetime)
+    if event_datetime != nil
+      event_datetime.strftime("%B %d, %Y @ %l:%M %P")
     else
-      event_date
-    end
-  end
-
-  def format_time(event_time)
-    if event_time != nil
-      event_time.strftime("%l:%M %P")
-    else
-      event_time
+      event_datetime
     end
   end
 
