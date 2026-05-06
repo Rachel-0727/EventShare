@@ -18,6 +18,14 @@ module PostsHelper
     end
   end
 
+  def format_time(event_time)
+    if event_time != nil
+      event_time.strftime("%l:%M %P")
+    else
+      event_time
+    end
+  end
+
   def error_handling(post_errors)
     if post_errors.any?
       post_errors.full_messages.each do |message|

@@ -74,6 +74,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.fetch(:post, {}).permit(:event_title, :location, :event_date, :description, requirements_attributes: [ :id, :req_description, :_destroy ])
+      params.fetch(:post, {}).permit(:event_title, :location, :event_date, :event_time, :description, requirements_attributes: [ :id, :req_description, :_destroy ])
     end
 end
