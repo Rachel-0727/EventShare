@@ -1,0 +1,12 @@
+# Info about active storage fixtures: https://stackoverflow.com/questions/50453596/activestorage-fixtures-attachments
+# More info: https://guides.rubyonrails.org/active_storage_overview.html#adding-attachments-to-fixtures
+
+johns_picture:
+  name: avatar
+  record: john_doe (User)
+  blob: johns_picture_blob
+
+jane_picture:
+  name: avatar
+  record: jane_doe (User)
+  blob: janes_picture_blob
