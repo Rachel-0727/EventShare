@@ -8,22 +8,19 @@ game_night:
   organizer: john_doe
   event_title: "Game Night"
   location: "Dupre Floor 4 Lounge"
-  event_date: 12-5-2026
-  event_time: 7:00 PM
+  event_datetime: 12-5-2026 7:00 PM
   description: "Finals are over, so let's play games together!"
 
 study_session: 
   organizer: john_doe
   event_title: "Study Session"
   location: "Library 2nd Floor"
-  event_date: 6-5-2026
-  event_time: 2:00 PM
+  event_datetime: 6-5-2026 2:00 PM
   description: "Study for finals together."
 
 dinner: 
   organizer: jane_doe
   event_title: "Dinner"
   location: "Indochin, meet up at CC"
-  event_date: 11-5-2026
-  event_time: 11-5-2026 8:00 PM
+  event_datetime: 11-5-2026 8:00 PM
   description: "Let's eat Vietnamese food to celebrate the end of the semester"
