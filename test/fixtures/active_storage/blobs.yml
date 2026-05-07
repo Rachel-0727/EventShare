@@ -6,3 +6,19 @@ johns_picture_blob:
 
 janes_picture_blob:
   <%= ActiveStorage::FixtureSet.blob filename: "jane.jpeg", service_name: "test_fixtures" %>
+
+rupauls_picture_blob:
+  <%= ActiveStorage::FixtureSet.blob filename: "rupaul.jpg", service_name: "test_fixtures" %>
+
+rr_martin_picture_blob:
+  <%= ActiveStorage::FixtureSet.blob filename: "rr_martin.jpg", service_name: "test_fixtures" %>
+
+pb_picture_blob:
+  <%= ActiveStorage::FixtureSet.blob filename: "coo.png", service_name: "test_fixtures" %>
+
+rl_picture_blob:
+  <%= ActiveStorage::FixtureSet.blob filename: "coo.png", service_name: "test_fixtures" %>
+
+outing_club_picture_blob:
+  <%= ActiveStorage::FixtureSet.blob filename: "coo.png", service_name: "test_fixtures" %>
+

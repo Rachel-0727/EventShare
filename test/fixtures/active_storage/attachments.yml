@@ -10,3 +10,28 @@ jane_picture:
   name: avatar
   record: jane_doe (User)
   blob: janes_picture_blob
+
+rupaul_picture:
+  name: avatar
+  record: rupaul (User)
+  blob: rupauls_picture_blob
+
+rr_martin_picture:
+  name: avatar
+  record: rr_martin (User)
+  blob: rr_martin_picture_blob
+
+pb_picture:
+  name: avatar
+  record: pb (User)
+  blob: pb_picture_blob
+
+rl_picture:
+  name: avatar
+  record: rl (User)
+  blob: rl_picture_blob
+
+outing_club_picture:
+  name: avatar
+  record: outing_club (User)
+  blob: outing_club_picture_blob

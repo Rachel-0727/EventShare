@@ -18,9 +18,44 @@ study_session:
   event_datetime: 6-5-2026 2:00 PM
   description: "Study for finals together."
 
+drag_marathon:
+  organizer: rupaul
+  event_title: "Rupaul Drag Race Marathon"
+  location: "Third Floor of Humanities"
+  event_datetime: 15-5-2026 8:00 PM
+  description: "Binging the entirety season 17!"
+
 dinner: 
   organizer: jane_doe
   event_title: "Dinner"
   location: "Indochin, meet up at CC"
   event_datetime: 11-5-2026 8:00 PM
   description: "Let's eat Vietnamese food to celebrate the end of the semester"
+
+book_club:
+  organizer: rr_martin
+  event_title: "Monthly Book Chat"
+  location: "Old Main 4th Floor"
+  event_datetime: 1-5-2026 6:00 PM
+  description: "Discussing A Song Of Ice & Fire This Week!"
+
+yoga_session:
+  organizer: pb
+  event_title: "Boba & Yoga"
+  location: "Lounge in Leonard Center"
+  event_datetime: 3-5-2026 4:30 PM
+  description: "Mats and boba provided!"
+
+pizza_party:
+  organizer: rl
+  event_title: "2nd Floor Pizza Party"
+  location: "Turck Hall Lounge"
+  event_datetime: 31-8-2025 6:30 PM
+  description: "Free pizza for all residents. Come meet your neighbors!"
+
+hiking_trip:
+  organizer: outing_club
+  event_title: "River Trail Hike"
+  location: "Meet outside Old Main"
+  event_datetime: 22-4-2026 10:00 AM
+  description: "A scenic hike along the Mississippi River."

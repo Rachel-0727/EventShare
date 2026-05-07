@@ -5,3 +5,18 @@ john_doe:
 
 jane_doe:
   username: "Jane Doe"
+
+rupaul:
+  username: "Rupaul"
+
+rr_martin:
+  username: "George Martin"
+
+rl:
+  username: "Residential Life @ Mac"
+
+pb:
+  username: "Program Board @ Mac"
+
+outing_club:
+  username: "Outing Club"

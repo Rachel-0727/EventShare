@@ -11,3 +11,15 @@ jane_game:
 john_dinner: 
   user: john_doe
   post: dinner
+
+rupaul_study:
+  user: rupaul
+  post: study_session
+
+rr_martin_study:
+  user: rr_martin
+  post: study_session
+
+jane_doe_study:
+  user: jane_doe
+  post: study_session
