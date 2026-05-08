@@ -11,7 +11,7 @@
         </div>
       <% end %>
       <div class="ml-3">
-        <p class="!font-[Unbounded] text-sm font-medium text-[var(--typography-black)]">@<%=post.organizer.username%></p>
+        <p class="!font-[Unbounded] text-sm font-medium text-[var(--typography-black)]">@<%=post.organizer.username.gsub(/\s+/, "_").downcase%></p>
         <p class="text-sm font-light text-[var(--typography-black)]">
           <%= post.updated_at.localtime.strftime('%B %e, %Y, %l:%M %P')%>
         </p>
