@@ -1,4 +1,6 @@
 # Additional translations at https://github.com/heartcombo/devise/wiki/I18n
+# This is a file from the Devise gem. 
+# Though currently unused, this could be implemented in the future when we want accounts to be linked to an email.
 
 en:
   devise:
