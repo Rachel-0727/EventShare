@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-This application was created with Ruby version 3.4.8 and has the following system dependencies:
+This application was created with Ruby version 4.0.7 and has the following system dependencies:
 
 * TailwindCSS
 * PostgreSQL 16.13
